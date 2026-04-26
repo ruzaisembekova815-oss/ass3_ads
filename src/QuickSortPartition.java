@@ -7,7 +7,7 @@ public class QuickSortPartition {
     }
 
     public static int partition(int[] arr, int low, int high) {
-        // Using the first element as Pivot
+
         int pivot = arr[low];
         int i = low;
 
@@ -21,7 +21,7 @@ public class QuickSortPartition {
                 System.out.println("Swapped: " + arr[j] + " and " + arr[i]);
             }
         }
-        // Place pivot in its final position
+
         int temp = arr[low];
         arr[low] = arr[i];
         arr[i] = temp;
