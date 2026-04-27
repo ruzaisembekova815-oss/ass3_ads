@@ -10,7 +10,7 @@ public class BubbleSort {
         int n = arr.length;
 
         for (int pass = 1; pass <= 3; pass++) {
-            boolean swapped = false;  // Флаг для early exit
+            boolean swapped = false; 
 
             for (int j = 0; j < n - pass; j++) {
                 if (arr[j] > arr[j + 1]) {
@@ -18,7 +18,7 @@ public class BubbleSort {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
-                    swapped = true;  // Была замена
+                    swapped = true; 
                 }
             }
 
@@ -27,7 +27,7 @@ public class BubbleSort {
 
             // EARLY EXIT
             if (!swapped) {
-                System.out.println("→ Early exit! Массив уже отсортирован на проходе " + pass);
+                System.out.println("→ Early exit! Array is sorted " + pass);
                 break;
             }
         }
