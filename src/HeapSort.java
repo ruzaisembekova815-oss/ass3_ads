@@ -3,8 +3,6 @@ public class HeapSort {
         int[] arr = {51, 61, 67, 33, 25, 58, 84, 41, 53, 63};
 
 
-
-        // Строим Max-Heap
         for (int i = arr.length / 2 - 1; i >= 0; i--) {
             heapify(arr, arr.length, i);
         }
@@ -12,7 +10,7 @@ public class HeapSort {
         System.out.println("\nMax-Heap:");
         printArray(arr);
 
-        // Первый extract-max
+    
         int temp = arr[0];
         arr[0] = arr[arr.length - 1];
         arr[arr.length - 1] = temp;
